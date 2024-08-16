@@ -416,7 +416,7 @@ global.reloadHandler = async function(restatConn) {
 
   // Para cambiar estos mensajes, solo los archivos en la carpeta de language, 
   // busque la clave "handler" dentro del json y cámbiela si es necesario
-  conn.welcome = '👋 ¡Bienvenido/a!\n@user';
+  conn.welcome = '`*╭┈⊰* @subject *⊰┈ ✦*\n*┊✨ BIENVENIDO(A)!!*\n┊💖 @user\n┊📄 *LEA LA DESCRIPCIÓN DEL GRUPO*\n*╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✦*\n@desc';
   conn.bye = '👋 ¡Hasta luego!\n@user';
   conn.spromote = '*[ ℹ️ ] @user 𝐅𝐮𝐞 𝐩𝐫𝐨𝐦𝐨𝐯𝐢𝐝𝐨 𝐚 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫.*';
   conn.sdemote = '*[ ℹ️ ] @user Fue degradado de administrador.*';
@@ -577,7 +577,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `[ ⏳ ] Uptime: ${uptime} 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐃𝐎 𝐁𝐘 𝐏𝐇𝐈𝐀 𝐒𝐈 𝐐𝐔𝐈𝐄𝐑𝐄𝐒 𝐂𝐎𝐍𝐓𝐑𝐀𝐓𝐀𝐑𝐋𝐎 𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐓𝐄 𝐂𝐎𝐍 +𝟓𝟐 𝟗𝟗𝟗 𝟕𝟗𝟒 𝟔𝟐𝟖𝟐 𝐎 𝐄𝐍𝐓𝐑𝐀 𝐀𝐋 𝐆𝐑𝐔𝐏𝐎 https://chat.whatsapp.com/I4bJRE0ULDd4DJDGxPxKU8`;
+  const bio = `[ ⏳ ] Uptime: ${uptime} 𝑩𝑶𝑻 𝑪𝑹𝑬𝑨𝑫𝑶 𝑩𝒀 𝑫𝑨𝑵𝑵𝒀 𝑽𝑵𝑻𝑺`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
